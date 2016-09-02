@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="UTF-8" ?>
+<ContentPage x:Class="LifeCycleExample.HomePageWithXaml"
+             xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml">
+    <ContentPage.Content>
+        <StackLayout HorizontalOptions="Center" Margin="50" Spacing="10">
+            <Label Margin="20"
+                   HorizontalOptions="Center"
+                   FontSize="28"
+                   Text="{Binding LabelPresentation}"
+                   TextColor="Lime" />
+			<Label Margin="20"
+                   HorizontalOptions="Center"
+                   FontSize="28"
+                   Text="{Binding lblMessageForBackgroundActivity}"
+                   TextColor="Blue" />
+            <Label FontSize="33"
+					HorizontalOptions="Center"
+                   Text="{Binding LabelClickCount}"
+                   TextColor="Red" />
+            <Button Command="{Binding ClickCommand}" Text="Clique aqui e veja a mágia acontecer!" />
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>
